@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 const App = () => {
   const API_KEY = "985cb0c563a4a40ad654ecb25361aa98";
@@ -25,6 +25,7 @@ const App = () => {
       <input
         className="search"
         placeholder="Enter city"
+        value={query} 
         onChange={(e) => setQuery(e.target.value)}
       />
       {data && data.main && data.weather && (
@@ -39,3 +40,4 @@ const App = () => {
 };
 
 export default App;
+

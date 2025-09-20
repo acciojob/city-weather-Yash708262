@@ -15,6 +15,7 @@ const App = () => {
       .then((res) => res.json())
       .then((data) => {
         setData(data);
+        setQuery(""); 
       })
       .catch((err) => console.error(err));
   }, [query]);
